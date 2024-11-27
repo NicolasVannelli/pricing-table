@@ -1,0 +1,241 @@
+* {
+    font-family: Be Vietnam Pro;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-image: url(./resources/bg-pattern.png);
+    background-color: #f8fafc;
+    width: 100vw;
+    text-align: center;
+}
+
+header p {
+    width: 450px;
+    justify-self: center;
+    padding-bottom: 32px;
+}
+
+h1 {
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+h4 {
+    margin-bottom: 48px;
+    font-weight: 300;
+    color: #798088;
+}
+
+a {
+    text-decoration: none;
+    color: #263ea8;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.enterprise {
+    grid-column-start: 5;
+}
+
+.free {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.team {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.popular {
+    background-color: #121826;
+    color: white;
+    grid-column-start: 4;
+}
+
+div h3 {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #445ab4;
+    border-radius: 20px;
+    padding: 0 15px;
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+
+.popular h3 {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #445ab4;
+    border-radius: 20px;
+    padding: 0 15px;
+    margin-top: 16px;
+    margin-bottom: 5px;
+    color: #f1f2f3;
+}
+
+div p {
+    height: 15px;
+    padding: 20px 64px;
+    border-top: 0.5px solid #f1f2f3;
+    border-bottom: 0.5px solid #f1f2f3;
+}
+
+.popular p {
+    border-top: 0.5px solid #171c2a;
+    border-bottom: 0.5px solid #171c2a;
+}
+
+.popular a {
+    background-color: #7d4f1e;
+    text-decoration: none;
+    padding: 16px;
+    color: #f1f2f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular h4 {
+    color: #ffffff;
+}
+
+div {
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 48px;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    padding: 16px;
+    color: #445ab4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    margin-top: 238px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    background-color: #f9fafc;
+    overflow: hidden;
+    border-radius: 15px 0px 0px 15px;
+    height: 460px;
+}
+
+
+@media (max-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .section {
+        margin-top: 238px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        background-color: #f9fafc;
+        overflow: hidden;
+        border-radius: 15px 0px 0px 15px;
+        height: 460px;
+    }
+
+    .popular {
+        background-color: #121826;
+        color: white;
+        grid-column-start: 3;
+    }
+
+    .enterprise {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+    }
+
+    .free {
+        display: none;
+    }
+
+    .team {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        z-index: 1;
+        background-color: #ffffff;
+    }
+
+    .section p {
+        text-align: start;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 20px;
+    }
+}
+@media (max-width: 640px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .section {
+        margin-top: 238px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        background-color: #f9fafc;
+        overflow: hidden;
+        border-radius: 15px 0px 0px 15px;
+        height: 460px;
+    }
+
+    .popular {
+        background-color: #121826;
+        color: white;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+    }
+
+    .enterprise {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+    }
+
+    .free {
+        display: none;
+    }
+
+    .team {
+        display: none;
+    }
+
+    .section p {
+        text-align: start;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
